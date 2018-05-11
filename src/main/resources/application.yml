@@ -1,0 +1,11 @@
+spring:
+  profiles:
+    active: inte
+  http:
+    encoding:
+      enabled: true
+      force: true
+      charset: UTF-8
+
+logging:
+  config: classpath:logback-spring.xml
