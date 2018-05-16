@@ -1,11 +1,13 @@
 spring:
   profiles:
-    active: inte
+    active: dev
   http:
     encoding:
       enabled: true
       force: true
       charset: UTF-8
-
 logging:
   config: classpath:logback-spring.xml
+mapper:
+  mappers: tk.mybatis.mapper.common.Mapper
+  not-empty: true
